@@ -1,0 +1,16 @@
+:root{
+    --heading-color:aqua;
+    --background-color:#ccc;
+    --text-ki-shadow:0px 0px 3px rgb(104,104,104);
+
+}
+/*we can create them in root and then use it anywhere in code*/
+
+body{
+    background-color: var(--background-color);
+}
+
+h1{
+    color: var(--heading-color);
+    text-shadow: var( --text-ki-shadow);
+}

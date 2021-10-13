@@ -1,0 +1,101 @@
+/* * means we are applying this for everything*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+
+     /*important*/
+     display: flex;
+     justify-content: space-between; /*it will not show any space between bcz there is no space between them,this is why we give width as 400px*/
+    /* border: 1px solid white; */
+     width: 400px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+   
+}
+
+nav{
+background-color: #343a40;
+display: flex;  /* it will arrange everything in row*/
+justify-content: space-around;   /* it will create space between the anchor tag*/
+
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li{
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:620px)  {
+    nav,ul{
+        flex-direction: column;
+        align-items: center;  /* we dont use justify content bcz we change the main axis to vertical by changing direction as column*/
+    }
+    
+}
+
+/*flex-align = cross-axis change, justify-content= main-axis */
+
+/* NAVBAR CODES ENDS HERE*/
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75vw;
+   /* border: 1px solid black; */
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    width: 300px;
+    border: 1px solid #ccc; 
+    margin: 10px;   /* 20 */
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104, 104, 104);
+    transition: 100ms;
+}
+
+
+figure img{
+    height: 200px;
+    width: 100%;
+}
+
+figure:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+
+}
+
+figcaption button{
+padding: 10px,20px;
+margin: 10px;
+font-size: 16px;
+border:1px solid #ccc ;
+border-radius:5px ;
+background: none;
+}
+
+figcaption button:hover{
+background: lightgray ;
+color: white;
+cursor: pointer;
+}
+
+/*
+figcaption p{
+    font-size: 300;
+}
+*/

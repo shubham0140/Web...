@@ -1,0 +1,61 @@
+/*The prespective css property determines the distance b/w the z=0 plane and user in order to give a 3D positioned element */
+
+section{
+    width: 450px;
+    height: 280px;
+    margin: 30px auto;
+    border: 2px solid red;
+    position: relative;
+    perspective: 800px;  /*we should always apply perspective on parent element, then only it can apply on child element*/
+}
+
+
+/* position: absolute; will make div-b above the div-a*/
+.side-a, .side-b{
+    position: absolute;
+    backface-visibility: hidden; /*but it didn't get hide, for that we applied transform-style on wrapper*/
+}
+
+
+div{
+    width: 100%;
+    height: 100%;
+}
+
+/*if we want to side-a to come above side-b for that we will give z-index to side-a greater than side-b*/
+.side-a{
+    background-color: #2a9d8f;
+    z-index: 1;
+}
+
+.side-b{
+    background-color: #f4a261;
+    z-index: 0;
+    transform:rotateY(180deg) ; /*to make front of side-b visible */
+     
+}
+
+
+.side-b h2{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+color: #ffe8d6;
+}
+
+.side-a img{
+    height: 100%;
+    width:100% ;
+}
+
+
+
+
+.wrapper{
+    transition: 2s;
+    transform-style: preserve-3d; /*it will make everything work smoothly*/
+}
+
+.wrapper:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
