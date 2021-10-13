@@ -1,0 +1,89 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: lightseagreen;
+}
+
+div:hover{
+background-color: aqua;
+}
+
+/* focus is the state when we are going to write something in text box */
+input:focus{
+    background-color: burlywood;
+}
+
+a[href="http://google.com"]:visited{
+color: crimson;
+}
+
+h1:active{
+    color: cyan;
+}
+
+/* (::)double colon means pseudo element or a particular element but (:)single colon means pseodo class */
+p::first-letter{
+    font-size: 20px;
+    color: green;
+}
+
+/* STRUCTURAL PSEUDO CLASSES */
+/* we want to select all the (li) which are at odd position */
+
+/*
+li:nth-of-type(odd){
+    color: red;
+} 
+*/
+
+/*
+li:nth-of-type(even){
+    color: red;
+}
+*/
+
+/* 2n+3 means it will start from 3 and repeat after every 2 */
+li:nth-of-type(2n+3){
+    color:green;
+}
+
+
+li:nth-of-type(1){
+    color: blue;
+}
+
+/*
+li:nth-of-type(2){
+    color:palevioletred;
+}
+*/
+
+li:first-child{
+    color: purple;
+}
+
+li:last-child{
+    color: seagreen;
+}
+
+article:last-of-type{
+    color: brown;
+}
+
+h1::after{
+    color: red;
+    border: 1px dashed green;
+    content: "After h1";
+}
+
+h1::before{
+    color: green;
+    border: 1px dashed red;
+    content: "Before h1";
+}
+
+h2::after{
+    color: red;
+    content: "\2764";
+}

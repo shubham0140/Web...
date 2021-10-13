@@ -1,0 +1,47 @@
+/* 1.Element selectors */
+h1{
+    color: green;
+}
+
+strong{
+    color: red;
+}
+
+/* 2.ID Selectors */
+/* each element should have unique ID ,we can't give same ID to two element */
+#special{
+    text-transform: uppercase;
+}
+
+/* 3.CLASS SELECTOR */
+/* as we can't select multiple element using ID, but we can select multiple element by class */
+
+.one{
+    color: blue;
+    text-decoration: line-through;
+}
+
+/* 4.ATTRIBUTE SELECTORS */
+/* attribute is extra information we provide with tag */
+
+a[href="http://google.com"]{
+    font-size: 24px;
+    color: palevioletred;
+}
+
+input[type="text"]{
+    background-color: peachpuff;
+}
+
+input[disabled]{
+    background-color: royalblue;
+}
+
+/* 5.UNIVERSAL SELECTOR */
+/* it will select header , body, html ,etc. it will select all */
+/* star(*) means everything */
+
+*{
+    border:1px solid gray;
+}
+

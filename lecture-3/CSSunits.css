@@ -1,0 +1,60 @@
+article{
+    font-size: 100px;
+}
+
+
+article p{
+    font-size: 20%;
+}
+
+section:nth-of-type(1){
+    border:1px solid black;
+    height: 400px;
+    width: 400px;
+}
+
+section div:nth-of-type(1){
+    border:2px solid red;
+    width: 40%;
+    height: 40%;
+}
+
+section:nth-of-type(2){
+    width: 1000px;
+    height: 200px;
+border: 2px solid lightsalmon ;
+}
+
+section:nth-of-type(2) img{
+height: 100%;
+width: 100%;
+}
+
+/* here 2 em will double the font-size of child element ,if we take 0.5em then font-size of child element will be half of parent element*/
+/*
+ul{
+    font-size: 2em;
+}
+*/
+
+
+/* 
+but there is a pblm with em, as it shows the snowball effect; for that we have rem to solve this issue, where r means root element
+here html itself is a root element
+ */
+/*default size of html is 16px; 2rem means twice the size of root element or html*/
+
+html{
+    font-size:20px ;
+}
+
+ul{
+    font-size: 2rem;
+}
+
+section:nth-of-type(3){
+    border: 2px solid black;
+    background-color: cornflowerblue;
+    height: 40vh;
+    width: 70vw;
+}

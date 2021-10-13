@@ -1,0 +1,35 @@
+p{
+
+/* Dimension-height and width*/
+width: 400px;
+/*height: 400px; */
+
+/* Border */
+border: 2px solid green;
+
+/*MARGIN*/
+/* if we give one value of margin then it will applied on every side */
+/*if we give all for value of Margin TOP,RIGHT,BOTTOM,LEFT */
+/* if we give two value of margin then (1st value=top&bottom) & (2nd value=left&right) */
+/*margin: 50px; */
+/* margin: 10px,30px,40px,50px; */
+/* margin: 30px,40px */
+margin: 30px auto;
+/* auto will give equal margin from left to right ,it will not work for top to bottom*/
+
+
+/* margin-top: 30px;
+margin-right: 40px;
+margin-bottom: 50px;
+margin-left: 70px; */
+
+
+
+/*PADDING*/
+
+/*
+padding: 30px;
+padding: 20px,30px,40px,50px;
+*/
+padding-left: 60px;
+}

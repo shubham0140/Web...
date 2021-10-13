@@ -1,0 +1,51 @@
+/* h1 is block element but to make it inline we use display:inline 
+when element is inline height&width are not respected or work. but margin and padding will work */
+
+h1{
+    border:2px solid black;
+    background-color: aqua;
+    display: inline;
+    height: 400px;
+    width: 200px;
+   /* margin: 40px;
+    padding: 20px; */
+}
+
+
+/*span is inline element but to make it block we use display:block 
+in case of block element, all box model properties is respected or work. such as height,width,margin,padding.
+*/
+
+span{
+    border: 1px solid black;
+    background-color: palevioletred;
+    display: block;
+    height: 50px;
+    width: 400px;
+   margin: 40px;
+    padding: 40px;
+}
+
+
+/* display:inline-block will make block element as inline element
+ and it will also show properties of box model.such as dimension ,border, margin,padding.
+ as it is inline,it doesn't block the view code
+  */ 
+div{
+    border: 2px solid black;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+}
+
+/* display:none will remove everything from view code but when we inspect it will we there.
+*/
+
+div:nth-of-type(2){
+  /*
+    display:none;
+     */
+     visibility: hidden;
+}

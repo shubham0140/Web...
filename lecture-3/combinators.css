@@ -1,0 +1,29 @@
+/* 1.DESCENDANT COMBINATORS */
+/* decendant menans i am descendant of my mother but reverse is not true */
+
+article strong{
+    color: red;
+}
+
+ul a{
+    color: green;
+}
+
+/* 2.CHILD COMBINATORS */
+ul>li{
+    border-top: 2px solid orange;
+}
+
+/* 3.ADJACENT COMBINATORS */
+/* we are selecting all the paragraph which is adjacent to h4 */
+
+h4 + p{
+    color: blue;
+}
+
+/* 4.GENERAL SIBBLING COMBINATION */
+
+h2~p{
+    color: palevioletred;
+
+}

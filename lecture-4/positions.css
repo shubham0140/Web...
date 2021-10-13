@@ -1,0 +1,53 @@
+div{
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    display: inline-block;                                                                                                                                                                            ;
+}
+/* default value is set as static for everything
+offset property like top,left,right,bottom will not work for STATIC POSITIONS */
+#static #middle{
+    position: static;
+    top: 100px;
+    left: 100px;
+    right: 400px;
+    bottom: 100px;
+}
+
+/* RELATIVE POSITIONS will work for offset value like top,left,right,bottom */
+
+#relative #middle{
+    position: relative;
+    
+  /* 
+   top: 100px;
+  left: 50px;
+  */
+    bottom: 100px; 
+}
+
+/* ABSOLUTE POSITIONS will make another layer where given id( here middle) will come on upper new layer 
+and that space of div2 is taken by div3
+DIV 2 WILL TAKE POSITIONS WIH RESPECT TO ITS PARENT (HERE BODY) BCZ HERE SECTION DOESN'T PROVIDE ANY POSITION*/
+#absolute #middle{
+    position: absolute; 
+    top: 10px;
+}
+
+/* as element is positioned with respect to its closest ansistor in absolute position, 
+here we are providing position to sector so it will take place with respect to section
+*/
+#absolute{
+    position: relative; 
+}  
+
+
+/*FIXED POSITION */
+/*it will come out from normal flow first*/
+/*it will take position with respect to initial containing block i.e body*/
+
+#fixed #middle{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}

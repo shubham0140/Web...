@@ -1,0 +1,29 @@
+/*element selector */
+p{
+    color: red;
+}
+
+/*class selector is more specific than element selector*/
+.para{
+    color: blue;
+}
+
+/* id is more specific than above two ,doesn't matter if we write this first or last ,it will only aplly bcz it is more specific */
+#special-para{
+    color: purple;
+}
+/* inline element is more specific */
+
+/* i.e id> class> element */
+/* specificity calculator :) */
+
+
+/* here color get INHERITANCE form parent element , we applied color red on unordered list but ordered list also became red */
+ul{
+    color: red;
+}
+
+/* here border doesn't get inheritated,mostly text and color get inherited */
+ul>li{
+    border-top:2px solid green;
+}

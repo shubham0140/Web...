@@ -1,0 +1,17 @@
+div{
+    border: 2px solid black;
+    background-color: lightskyblue;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/*STICKY POSITION will behave as fixed position after 30px(here given) 
+else it will behave as relative position*/
+div{
+    position: sticky;
+    top: 30px;
+}
+
+li::before{
+    content: "\260E";
+}

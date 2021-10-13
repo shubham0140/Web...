@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h2>HTML FORMS</h2>
+
+    <h2>Sign Up</h2>
+    <!--where we want to submit the data is done by "ACTION" by giving url of facebook,etc to action-->
+    <form action="#" method="GET">
+
+        <fieldset>
+            <legend>Presonal Info</legend>
+            <label for="firstname">First Name</label>
+        <input type="text" id="firstname" placeholder="First Name" name="firstname">
+        <br>
+        <br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" placeholder="Last Name" name="lastname">
+        <br>
+        <br>
+<!--When we want to select only one gender not multiple then use same name="gender"-->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">other</label>
+        <input type="radio" id="other" name="gender" value="other">
+    
+        </fieldset>
+
+    <br>
+    <br>
+    <fieldset>
+        <legend>Educational Info</legend>
+        
+        <label for="marksheet">Marksheet</label>
+        <input type="file" id="marksheet">
+        <br>
+        <br>
+        <label for="biodata">Biodata</label>
+        <textarea name="Biodata" id="biodata" cols="30" rows="5"></textarea>
+    
+    </fieldset>
+<br>
+<br>
+<button>Submit</button>
+
+
+
+    </form>
+</body>
+</html>

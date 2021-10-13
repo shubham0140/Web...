@@ -1,0 +1,41 @@
+/*To remove the underline, we use text-decoration as none*/
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+
+/*To remove the circle befre all lists*/
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #0077b6;
+    position: fixed;
+    width: 100%;
+}
+
+/*to remove default margin and padding*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*To make everthing in asingle row */
+li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+li:first-of-type{
+    margin-left:20px ;
+}
+/* parent/ancestor of li is nav,we have already given position to the nav above, so it will move acording to nav 
+if not then it will move acording to body */
+li:last-of-type{
+   position: absolute; 
+    right: 30px;
+}

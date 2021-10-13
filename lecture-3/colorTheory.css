@@ -1,0 +1,21 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+
+}
+
+/* we are giving color using hexadecimal */
+div:nth-of-type(1){
+background-color: #ff8080;
+}
+
+/* we are giving color using rgb */
+div:nth-of-type(2){
+    background-color: rgb(30,20,200);
+}
+
+/* we are giving colour using rgba, where a denotes alpha ,which values vaary from 0 t0 1; where 0 denotes transprent and 1 denotes opaque */
+div:nth-of-type(3){
+    background-color: rgba(180,10,20,0.6);
+}
