@@ -1,0 +1,76 @@
+---array methods(push,pop,unshift,shift,slice,splice,split,joint)---
+
+
+------includes-----
+const arr = ['Mango','Oranges','Grapes'];
+undefined
+arr.includes('Mango');
+true
+arr.includes('Apple');
+false
+
+-------indexOf--------
+arr;
+(3) ['Mango', 'Oranges', 'Grapes']0: "Mango"1: "Oranges"2: "Grapes"length: 3[[Prototype]]: Array(0)
+arr.indexOf('Oranges');
+1
+arr.indexOf('Grapes');
+2
+
+const arr = [1,2,3,4,5];
+undefined
+arr.indexOf(5);
+4
+arr.indexOf(10);
+-1
+
+"We are learning array methods".indexOf('learning');
+7
+"We are learning array methods".indexOf('learni');
+7
+"We are learning array methods".indexOf('cat');
+-1
+
+-------reverse--------
+----it is destuctive method, it changes the original array permanently---
+const arr = ['Mango','Oranges','Grapes'];
+undefined
+arr.reverse();
+(3) ['Grapes', 'Oranges', 'Mango']
+arr;
+(3) ['Grapes', 'Oranges', 'Mango']
+
+
+--in JS arrays are reference type--
+---if we change anything in copy of array then original array will change also---
+const colors = ['Green','Blue','Orange','Red'];
+undefined
+colors;
+(4) ['Green', 'Blue', 'Orange', 'Red']
+const colorsCopy = colors;
+undefined
+colorsCopy;
+(4) ['Green', 'Blue', 'Orange', 'Red']
+colorsCopy.push('89','9999');
+6
+colorsCopy;
+(6) ['Green', 'Blue', 'Orange', 'Red', '89', '9999']
+colors;
+(6) ['Green', 'Blue', 'Orange', 'Red', '89', '9999']
+colors == colorsCopy;
+true
+colors === colorsCopy;
+true
+
+-------Nested Array(2D-Array)---------
+const board =[['X','0','x'],['x','x','0'],['0','x','0']];
+undefined
+board;
+(3) [Array(3), Array(3), Array(3)]
+0: (3) ['X', '0', 'x']
+1: (3) ['x', 'x', '0']
+2: (3) ['0', 'x', '0']
+length: 3[[Prototype]]: Array(0)
+
+
+

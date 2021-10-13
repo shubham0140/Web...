@@ -1,0 +1,345 @@
+2+3+4;
+9
+typeof 1
+'number'
+typeof -99
+'number'
+typeof 3.14205
+'number'
+2*3
+6
+2**3;
+8
+2**5;
+32
+10/2;
+5
+100/0;
+Infinity
+-100/0;
+-Infinity
+typeof -Infinity;
+'number'
+Number.MAX_SAFE_INTEGER;
+9007199254740991
+
+0/0;
+NaN
+typeof NaN;
+'number'
+2+3*4-10/2;    /*2+12-5  = 14-5 = 9*/
+9
+3.14205;
+3.14205
+parseInt(3.1425);
+3
+parseInt("4.567");
+4
+parseInt("adsjhh3.13456");
+NaN
+parseInt("376473.1234");
+376473
+parseFloat("3.14678");
+3.14678
+parseFloat("3.14678rhgjki.lg");
+3.14678
+parseFloat("dfghutsz3.14678rhgjki.lg");
+NaN
+
+/* JS VARIABLES  IS MADE USING "Let" */
+let likes=99;
+undefined
+likes;
+99
+likes=likes+1;
+100
+likes;
+100
+
+/*WHEN WE DEFINE JS VARIABLES USING "const" THEN WE CAN'T CHANGE*/
+const PI= 3.14205;
+undefined
+PI;
+3.14205
+PI=32678;
+VM1020:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:3
+
+/* 'var' IS OLDER WAY FOR DEFINE JS VARIABLES*/
+var x=100;
+undefined
+x;
+100
+x=101;
+101
+x;
+101
+x=x-1;
+100
+x;
+100
+
+/*BOOLEAN*/
+let isRaining = true;
+undefined
+typeof isRaining;
+'boolean'
+isRaining=false;
+false
+typeof isRaining;
+'boolean'
+
+/*NAMING OF VARIABLES= CAN ONLY START WITH CHAR IN CAMEL-CASE(eg-isRaining)*/
+
+/* STRING */
+let msg= 'Leave me alone i hate u plz';
+undefined
+typeof msg;
+'string'
+msg;
+'Leave me alone i hate u plz'
+
+/* USE OF BACK-SLASH(\) BUTTON*/
+let str = "This is a vivek's book";
+undefined
+str;
+"This is a vivek's book"
+let str1 ='This is a vivek's book';
+VM340:1 Uncaught SyntaxError: Unexpected identifier
+let str1 = 'This is a vivek\'s book';
+undefined
+str1
+"This is a vivek's book"
+
+/* WHEN WE WANT TO PRINT BACK-SLASH */
+let str1 = 'This is a vivek\\\'s book';
+undefined
+str1;
+"This is a vivek\'s book"
+
+/*NON-DESTRUCTIVE STRING (eg-toLowerCase,toUpperCase) bcz AFTER APPLYING THIS OUR THERE IS NO EFFECT ON ORIGINAL STRING
+IT JUST COPY THIS */
+let msg= 'Leave me alone i hate u plss!!';
+undefined
+msg;
+'Leave me alone i hate u plss!!'
+msg.toUpperCase();
+'LEAVE ME ALONE I HATE U PLSS!!'
+msg.toLowerCase();
+'leave me alone i hate u plss!!'
+msg;
+'Leave me alone i hate u plss!!'
+let angryMsg = msg.toUpperCase();
+undefined
+angryMsg;
+'LEAVE ME ALONE I HATE U PLSS!!'
+
+/*INDEXING START FROM "0" AND WHEN ANYTHING IS NOT PRESENT IN MEMORY THEN OUTPUT WILL BE UNDEFINED as java-script create special folder where it place these values */
+/*UNDEFINED = whenever we create a variable java-script puts a special space holder*/
+
+let angryMsg = msg.toUpperCase();
+undefined
+msg[0];
+'L'
+msg[10];
+'l'
+msg[999];
+undefined
+
+/*NULL*/
+let person=null;
+undefined
+person;
+null
+
+/*MORE STRING*/
+let str = "Hello World";
+undefined
+str.length;
+11
+str.substr(3);
+'lo World'
+str.substr(4);
+'o World'
+str.substr(3,2);
+'lo'
+str.substr(3,5);
+'lo Wo'
+/*it always cut string forward*/
+str.substr(-5);
+'World'
+str.substr(-5,4);
+'Worl'
+
+/we can write substring in two ways
+str.substr(starting index)
+str.substr(starting index,ending index)
+1. if SI==EI then output will be empty
+2. if SI>EI then it will be swap and PRINT
+example:
+let str= "Hello World";
+undefined
+str.substring(7,2);
+'llo W'
+/
+
+/*trim() IS USE FOR REMOVING SPACE */
+let msg = '          This is a msg       ';
+undefined
+msg.trim();
+'This is a msg'
+
+/*LIKE toUpperCase() , trim() is also non-destuctive */
+msg;
+'          This is a msg       '
+msg.trim().toUpperCase();  /*we can use two together too*/
+'THIS IS A MSG'
+
+/*USE OF indexOf('');*/
+let str = 'This is a cat';
+undefined
+str.indexOf('i');
+2
+str.indexOf('i',2);
+2
+str.indexOf('i',3);
+5
+str.indexOf('cat');
+10
+str.indexOf('dog');
+-1
+
+/* replace in string*/
+let str = 'Hello World';
+undefined
+str.replace('l','x');
+'Hexlo World'
+str.replaceAll('l','x');
+'Hexxo Worxd'
+
+/*repeat in string*/
+'Hello'.repeat(3);
+'HelloHelloHello'
+'Hello '.repeat(3);
+'Hello Hello Hello '
+
+
+/*STRING CONCATATENATION*/
+"Hello" + "World";
+'HelloWorld'
+
+/*there is nothing like character in java script ,in this char is also treated as string */
+let x= 'a';
+undefined
+typeof x;
+'string'
+
+
+/* MATH */
+Math
+Math {abs: ƒ, acos: ƒ, acosh: ƒ, asin: ƒ, asinh: ƒ, …}
+Math.PI
+3.141592653589793
+Math.E;
+2.718281828459045
+Math.sqrt(16);
+4
+Math.ceil(2.345);
+3
+Math.floor(3.456);
+3
+Math.round(2.34);
+2
+Math.floor(3.456);
+3
+Math.round(2.34);
+2
+Math.round(2.678);
+3
+Math.round(2.5);
+3
+Math.round(3.5);
+4
+
+/*MATH- MIN/MAX*/
+Math.min(1,2,3,4,5,6,-99);
+-99
+Math.min(1,2,3,4,5,6,99);    
+1
+Math.max(1,2,3,4,5,6,99);
+99
+
+/*IMPORTANT
+abs is a special function, it is a example of 1-way function which we will discuss after some time
+abs means absolute, we will read about this in authentication
+*/
+Math.abs(-1000);
+1000
+Math.abs(1000);
+1000
+
+
+
+
+/*MATH-- Random number*/
+Math.random();
+0.10139699806816727
+
+/*we will not get the value 10*/
+Math.floor(Math.random()*10);
+5
+Math.floor(Math.random()*10);
+7
+Math.floor(Math.random()*10);
+9
+Math.floor(Math.random()*10);
+2
+Math.floor(Math.random()*10);
+8
+Math.floor(Math.random()*10);
+1
+Math.floor(Math.random()*10);
+7
+Math.floor(Math.random()*10);
+8
+Math.floor(Math.random()*10);
+1
+Math.floor(Math.random()*10);
+6
+Math.floor(Math.random()*10);
+0
+
+/*FOR GETTING THE VALUE 10 */
+Math.floor(Math.random()*10)+1;
+1
+Math.floor(Math.random()*10)+1;
+10
+
+/*FOR GETTING VALUE BETWEEN 20 TO 24, BCZ LAST NUMBER IS NOT INCLUDED*/
+Math.floor(Math.random()*4)+20;
+23
+Math.floor(Math.random()*4)+20;
+22
+Math.floor(Math.random()*4)+20;
+23
+
+/*FOR GETTING 25*/
+Math.floor(Math.random()*5)+20;
+25
+
+/*FOR GENERATE RANDOM NUMBER FROM 0 100*/
+Math.floor(Math.random()*100)+1;
+64
+Math.floor(Math.random()*100)+1;
+33
+Math.floor(Math.random()*100)+1;
+22
+Math.floor(Math.random()*100)+1;
+54
+Math.floor(Math.random()*100)+1;
+93
+Math.floor(Math.random()*100)+1;
+73
+Math.floor(Math.random()*100)+1;
+9
+
